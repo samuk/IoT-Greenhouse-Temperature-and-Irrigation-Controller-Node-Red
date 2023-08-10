@@ -38,8 +38,9 @@ In addition by setting personalized parameters is possible to store the data in 
 - User Parameters Flow
 
 You will find here: 
-     //Nodes that in case of after some unexpected electrical reboot the system must be initialized with previously parameters set by user, this information is extracted from the database directly
-    //set the email where alerts will be sent
+     //Nodes that in case of after some unexpected electrical reboot the system must be initialized with previous parameters set by the user, this information is extracted 
+     //from the database directly
+    //set the user and experiment information and email where alerts will be sent
 
 send phone in case of want telegram alerts
 
