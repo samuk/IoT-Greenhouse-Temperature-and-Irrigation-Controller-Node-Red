@@ -30,6 +30,7 @@
 - Necessary to install MariaDB server in Raspberry Pi for MySQL use (https://raspberrytips.com/install-mariadb-raspberry-pi/).
 - Remember that you need to install the missing modules that Node-Red will notify you after importing the flows.
 - In addition by setting personalized parameters is possible to store the data in a MySQL database and download them in a CSV format.
+- Please navigate to the center of every flow where nodes are programmed.
 
 # The Node-Red Flows:
 
