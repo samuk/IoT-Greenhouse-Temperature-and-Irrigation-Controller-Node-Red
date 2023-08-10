@@ -20,7 +20,7 @@
 - The version of the Node-RED was 1.3.5. However, it is possible to use it in recent versions of Node-Red. Note to in recent versions (newest NodeJs versions), the variables must be declared with the type before the name (example: var name_variable;).
 - Keep into account that the programming is connected to the physical output pins of the Pi. This means that must be control actuators (fans, heat extractors, etc) connected through relays to these pins to the system can run effectively the control action automatically.
 - The same with the irrigation, some valves or pumps must be controlled with relays connected to the Pi outputs.
-- There are providers such as Amazon or Waveshare that offer many Hat options for Raspberry Pi with relays included. Example: https://www.waveshare.com/product/raspberry-pi/hats.htm
+- There are providers such as Amazon or Waveshare that offer many HAT options for Raspberry Pi with relays included. Example: https://www.waveshare.com/product/raspberry-pi/hats.htm
 - In normal conditions, heat extractors are turned ON to decrease or OFF to increase the temperatures inside the greenhouses. But also for increasing the temperature, heaters can be adapted to this system.
 - All devices connected through MQTT must be in the same Wi-Fi network. And the Raspberry Pi will be used as a broker.
 - The sensors used were the sonoff TH Elite (https://sonoff.tech/product/diy-smart-switches/th-elite/) with a SI7021 Temperature & Humidity sensor.
@@ -37,7 +37,8 @@
 In addition by setting personalized parameters is possible to store the data in a MySQL database and download them in a CSV format.
 - User Parameters Flow
 
-AFter unexpected reboot the system must be initialized with previously 
+You will find here: 
+. AFter unexpected reboot the system must be initialized with previously 
 //parameters set by user, this information is extracted from
 
 set the email where alerts will be sent
