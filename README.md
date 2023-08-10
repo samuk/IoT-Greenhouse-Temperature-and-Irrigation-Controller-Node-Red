@@ -28,6 +28,9 @@ The Node-Red code:
 - However, it is possible to use this system with any MQTT sensor.
 - Remember that it is necessary to install the mosquitto broker on the Raspberry Pi (https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/).
 - Necessary to install MariaDB server in Raspberry Pi for MySQL use (https://raspberrytips.com/install-mariadb-raspberry-pi/).
+- Remember that you need to install the missing modules that Node-Red will notify you after importing the flows.
+
+The Flows:
 In addition by setting personalized parameters is possible to store the data in a MySQL database and download them in a CSV format.
 //User Parameters Flow------------------------------
 //AFter unexpected reboot the system must be initialized with previously 
