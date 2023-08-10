@@ -40,18 +40,28 @@ In addition by setting personalized parameters is possible to store the data in 
 ![App_config](https://github.com/Dpineda1996/IoT-MQTT-Temperature-Controller-Node-Red/assets/77678151/21a6499e-a738-4e1a-a2bf-7f4303fa4fdb)
 
 You will find here: 
+
 Nodes that in case of some unexpected electrical reboot the system must be initialized with previous parameters set by the user, this information is extracted from the database directly.
+
 Set the user and experiment information and email where alerts will be sent.
+
 apply the configuration selected and extracted from MySQL after an unexpected reboot
 
 - Alarms
-You will find here: 
+You will find here:
+
 The nodes are necessary to alert the user when temperature or humidity is over the previously set reference limits.
 
 - Sensors & Data Integration
-You will find here: 
+
+![App_monitoring](https://github.com/Dpineda1996/IoT-MQTT-Temperature-Controller-Node-Red/assets/77678151/305aee5f-c282-40c1-8bf8-3358e7572709)
+
+You will find here:
+
 Sensors data provisional replace for precise the control logic, in case of some sensor, fails (because of electrical or network failure), it will take data from the other one placed close
-Calculate the average data of the Temperature, Humidity, Dew point & VPD
+
+Calculate the average data of the Temperature, Humidity, Dew point & VPD.
+
 //Control--------------------------
 Readme
 This is based on a system controlled by 
