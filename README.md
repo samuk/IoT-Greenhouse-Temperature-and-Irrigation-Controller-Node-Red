@@ -44,9 +44,9 @@ You will find here:
 
 Nodes that in case of some unexpected electrical reboot the system must be initialized with previous parameters set by the user, this information is extracted from the database directly.
 
-Set the user and experiment information and email where alerts will be sent.
+The flows for setting the experiment information and email where alerts will be sent.
 
-apply the configuration selected and extracted from MySQL after an unexpected reboot
+Apply the configuration selected and extracted from MySQL after an unexpected reboot
 
 - Alarms
 
@@ -61,7 +61,7 @@ Web User Application - Tab monitoring
 
 You will find here:
 
-Sensors data provisional replace for precise the control logic in case of some sensor fails (because of electrical or network failure), it will take data from the other one placed close
+Sensors data provisional replace for precise the control logic in case of some sensor fails (because of electrical or network failure), it will take data from the other one placed closely.
 
 Calculate the average data of the Temperature, Humidity, Dew point & VPD.
 
@@ -69,40 +69,41 @@ Calculate the average data of the Temperature, Humidity, Dew point & VPD.
 
 You will find here:
 
-This is based on a system controlled by  relays connected to the Raspberry Pi and an additional electrical power system to control motors.
+This is based on a system controlled by relays connected to the Raspberry Pi and an additional electrical power system to control motors.
 
 These motors are working as heat extractors (extractors/fans) and will be controlled regarding the data from sensors and references set by the user in the dashboard.
 
-There are four extractors connected to the pins 29,31,33 and 36 of the Raspberry Pi. We called them:
+There are four extractors (in our project) connected to pins 29,31,33 and 36 of the Raspberry Pi. We called them:
 
-Fan left 1 (fl1), Fan left 2 (fl2), Fan right 1 (fr1), Fan right 2 (fr2)
+Fan left 1 (fl1), Fan left 2 (fl2), Fan right 1 (fr1), Fan right 2 (fr2).
 
 Users can set the reference values for temperature control
-fref1 = Temperature during the day, fref2 = Temperature to step change and prevent high gradient rate, fref3 = Temperature during the night
+fref1 = Temperature during the day. 
+
+fref2 = Temperature to step change and prevent high gradient rate. 
+
+fref3 = Temperature during the night.
 
 The day and night limits were created to control the temperature in parameters near real behavior. This means that normally, there are higher temperatures during the day than at night. So, this affects the plants and for that reason, the programming includes the possibility for the user can set the reference temperatures to be controlled automatically in these periods daily.
 
 Note to:
 
-Between fTime2 and fTime 3 is the day.
-
-Between fTime4 and fTime1 is night.
-
-Between fTime1 and fTime2 & fTime3 and fTime4 are the steps, where the temperature should be set in a middle point to not apply high changes directly to the plants.
+Between fTime2 and fTime 3 is the day; Between fTime4 and fTime1 is night; Between fTime1 and fTime2 & fTime3 and fTime4 are the steps, where the temperature should be set in a middle point to not apply high changes directly to the plants.
 
 The heat extractors will be turned on if the temperature is 1°C above reference (tref) in that period otherwise will be turned off.
 
-Users can also select in the dashboard if every extractor works with every tref  (day, night, step) then, the control action will use or not that specific extractor to increase the temperature.
+Users can also select in the dashboard if every extractor works with every tref  (day, night, step) then, the control action will use or not that specific extractor to increase or decrease the temperature.
 
-Users can also select in the dashboard if every extractor works with every tref  (day, night, step) then, the control action will use or not that specific extractor to decrease the temperature
-
-Remember that fref1 is the temperature during the day the day and nights limits can be changed in the "fTime&fRef limits control" node
+Remember that fref1 is the temperature during the day the day and night limits can be changed in the "fTime&fRef limits control" node.
 
 The Cooling (irrigation) flow is based on a system controlled by electro-valves which control the flow of water to irrigate the soil or the plants inside the greenhouse.
 
-The control is connected to the pin35 in the Raspberry Pi. However, you can change it as well as you need.
+The irrigation/cooling control is connected to the pin35 in the Raspberry Pi. However, you can change it as well as you need.
 
 - Database
+
+You will find here:
+
 These flows are for storing in the database.
 
 Note that data will be stored every ten minutes. You can change this in the "Store interval" node.
@@ -111,13 +112,11 @@ Data will be saved in the table DATA (you can change this on every DataSensor no
 
 Remember that data must coincide with the columns in the created table.
 
-Here you will find also the email sending flow for alerts notification to the user.
+Nodes that will help you to create your personalized MySQL table and will guide you in the process of storing data.
 
-You will find notes that will help you to create your personalized MySQL table and will guide you in the process of storing data.
+Nodes to download data from the MySQL table directly.
 
-You will find the nodes to download data from the MySQL table directly.
-
-Remember that this will only download your information related to the current trial in the course selected by the user in the dashboard; This was done in that way to not overload the Raspberry Pi with downloading very heavy files
+Remember that this will only download your information related to the current trial in the course selected by the user in the dashboard; This was done in that way to not overload the Raspberry Pi with downloading very heavy files.
 
 Note that are created two files to be downloaded. One file is from the DATA database and contains all information from sensors stored. The second one is from the SETTINGS database, which stored all configurations that the user set before. Then is possible to download both files with different information but depending on the current trial name.
 
