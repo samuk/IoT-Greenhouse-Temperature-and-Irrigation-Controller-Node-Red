@@ -32,29 +32,30 @@
 
 # The Node-Red Flows:
 
-   All flows and some nodes includes comments inside to easily understand the code.
+All flows and some nodes include comments inside to easily understand the code.
    
 In addition by setting personalized parameters is possible to store the data in a MySQL database and download them in a CSV format.
+
 - User Parameters Flow
+![App_config](https://github.com/Dpineda1996/IoT-MQTT-Temperature-Controller-Node-Red/assets/77678151/21a6499e-a738-4e1a-a2bf-7f4303fa4fdb)
 
 You will find here: 
-     //Nodes that in case of after some unexpected electrical reboot the system must be initialized with previous parameters set by the user, this information is extracted 
-     //from the database directly
-    //set the user and experiment information and email where alerts will be sent
+Nodes that in case of some unexpected electrical reboot the system must be initialized with previous parameters set by the user, this information is extracted from the database directly.
+Set the user and experiment information and email where alerts will be sent.
+apply the configuration selected and extracted from MySQL after an unexpected reboot
 
-send phone in case of want telegram alerts
+- Alarms
+You will find here: 
+The nodes are necessary to alert the user when temperature or humidity is over the previously set reference limits.
 
-//apply the configuration selected and extracted from MySQL after unexpected reboot
-//Alarms-------------------------------
-uncomment and add telegram node if you want to send it 
-//Sensors & Data Integration--------------------
-//In case of some sensor fails, it will take data from the other one placed close
-//Get data from sensor and check if fails or not
-//Calculate dew point avg & vpd
+- Sensors & Data Integration
+You will find here: 
+Sensors data provisional replace for precise the control logic, in case of some sensor, fails (because of electrical or network failure), it will take data from the other one placed close
+Calculate the average data of the Temperature, Humidity, Dew point & VPD
 //Control--------------------------
 Readme
 This is based on a system controlled by 
-relays connected to the Raspberry Pi and an adittional electrical power system to control motors.
+relays connected to the Raspberry Pi and an additional electrical power system to control motors.
 
 These motors are working as heat extractors (extractors/fans), and will be controlled regarding to the data from sensors and references set by user in dashboard.
 
