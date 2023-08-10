@@ -38,7 +38,7 @@ All flows and some nodes include comments inside to easily understand the code.
 - User Parameters Flow
 
 ![App_config](https://github.com/Dpineda1996/IoT-MQTT-Temperature-Controller-Node-Red/assets/77678151/21a6499e-a738-4e1a-a2bf-7f4303fa4fdb)
-Web User Application - Settings configuration
+Web User Application - Tab settings configuration
 
 You will find here: 
 
@@ -57,6 +57,7 @@ The nodes are necessary to alert the user when temperature or humidity is over t
 - Sensors & Data Integration
 
 ![App_monitoring](https://github.com/Dpineda1996/IoT-MQTT-Temperature-Controller-Node-Red/assets/77678151/305aee5f-c282-40c1-8bf8-3358e7572709)
+Web User Application - Tab monitoring
 
 You will find here:
 
