@@ -49,7 +49,7 @@ Set the user and experiment information and email where alerts will be sent.
 apply the configuration selected and extracted from MySQL after an unexpected reboot
 
 - Alarms
-- 
+
 You will find here:
 
 The nodes are necessary to alert the user when temperature or humidity is over the previously set reference limits.
@@ -60,7 +60,7 @@ The nodes are necessary to alert the user when temperature or humidity is over t
 
 You will find here:
 
-Sensors data provisional replace for precise the control logic, in case of some sensor, fails (because of electrical or network failure), it will take data from the other one placed close
+Sensors data provisional replace for precise the control logic in case of some sensor fails (because of electrical or network failure), it will take data from the other one placed close
 
 Calculate the average data of the Temperature, Humidity, Dew point & VPD.
 
@@ -74,10 +74,7 @@ These motors are working as heat extractors (extractors/fans) and will be contro
 
 There are four extractors connected to the pins 29,31,33 and 36 of the Raspberry Pi. We called them:
 
-Fan left 1 (fl1)
-Fan left 2 (fl2)
-Fan right 1 (fr1)
-Fan right 2 (fr2)
+Fan left 1 (fl1), Fan left 2 (fl2), Fan right 1 (fr1), Fan right 2 (fr2)
 
 Users can set the reference values for temperature control
 fref1 = Temperature during the day, fref2 = Temperature to step change and prevent high gradient rate, fref3 = Temperature during the night
@@ -86,56 +83,25 @@ The day and night limits were created to control the temperature in parameters n
 
 Note to:
 
-Between fTime2 and fTime 3 is day
+Between fTime2 and fTime 3 is the day.
 
-Between fTime4 and fTime1 is night
+Between fTime4 and fTime1 is night.
 
 Between fTime1 and fTime2 & fTime3 and fTime4 are the steps, where the temperature should be set in a middle point to not apply high changes directly to the plants.
 
-//the extractors will be turned on if temperature is 1°C above from reference in that period of time
-//otherwise will be turned off
-   //the nex line is for use the extractors defined by user to be used with the current temp reference
-    //since user selected in dashboard if every extractor work with every tref  (day,night,step)
-    //then, the control action will use or not that specific extractor to 
-    //increase the temperature
-    
-     //the nex line is for use the extractors defined by user to be used with the current temp reference
-    //since user selected in dashboard if every extractor work with every tref  (day,night,step)
-    //then, the control action will use or not that specific extractor to 
-    //decrease the temperature
+The heat extractors will be turned on if the temperature is 1°C above reference (tref) in that period of time otherwise will be turned off.
 
-  //remember that fref1 is the temperature during the day
-//the day and nights limits can be change in "fTime&fRef limits control" node
+Users can also select in the dashboard if every extractor works with every tref  (day, night, step) then, the control action will use or not that specific extractor to increase the temperature.
 
-Cooling readme
+Users can also select in the dashboard if every extractor works with every tref  (day, night, step) then, the control action will use or not that specific extractor to decrease the temperature
 
-This is based on a system controlled by 
-electrovalves which controls the flow of water trhough the soil inside greenhouse.
+Remember that fref1 is the temperature during the day the day and nights limits can be changed in the "fTime&fRef limits control" node
 
-This can be used also for controlling a irrigation system for the plants based on times to open or close the valves based on the needs of the plants.
+The Cooling (irrigation) flow is based on a system controlled by electrovalves which controls the flow of water to irrigate the soil or the plants inside the greenhouse.
 
-The control is connected to the pin35 in the Raspberry Pi. However you can change it as well as you need.
+The control is connected to the pin35 in the Raspberry Pi. However, you can change it as well as you need.
 
-//Set initial state to the cooling system in false till
-//information be obtained from MySQL or set by user in dashboard
-
-//get programming of the scheduler to cooler system
-//be used based on defined by user limits of day and time
-//this can be extracted from dashboard or MySQL depending if
-//there is an update in configurations or some unexpected reboot respectively
-
-//Get the programming set by user for the cooler system
-
-//Control the pin output in the raspberry to turn on or off
-//the cooling system in based of the schedule set by user
-
-//note to if user selected that cooling system must be work
-//on base of temperature control.
-//the cooling system will be activated if the temperature
-//is 3°C above from reference in that period of time
-//you can change the number 3 for more or less regarding your need
-
-//Database---------------
+- Database
 These flows are for storing in the database.
 
 Note that data will be stored every ten minutes. You can change this in the "Store interval" node.
@@ -146,26 +112,16 @@ Remember that data must coincide with the columns in the created table.
 
 Here you will find also the email sending flow for alerts notification to the user.
 
-//Insert the data into MySQL database
-//Note to these variables are related to the specific variables and parameters needed in this experiment
-//And includes data from air temp & hum
-//You can change this as well as you need must be the same as the table created in MySQL 
+You will find notes that will help you to create your personalized MySQL table and will guide you in the process of storing data.
 
-//Download data readme----------------------
+You will find the nodes to download data from the MySQL table directly.
 
-These are the flows needed to download the data stored in the table DATA inside your database.
+Remember that this will only download your information related to the current trial in the course selected by the user in the dashboard;This was done in that way to not overload the Raspberry Pi with downloading very heavy files
 
-Remember that this will only download your information related to the current trial in course selected by user in dashboard.
+Note that are created two files to be downloaded. One file is from the DATA database and contains all information from sensors stored. The second one is from the SETTINGS database, which stored all configurations that the user set before. Then is possible to download both files with different information but depending on the current trial name.
 
-This was done in that way to do not overload the Raspberry Pi with downloading very heavy files
+PLEASE MAKE SURE THAT THE TWO FILES (FROM DATA AND CONFIG) ARE NAMED CORRECTLY AND DIFFERENTLY.
 
-Note that are created two files to be downloaded.
-
-One file is from DATA database and contains all information from sensors stored.
-The second one is from SETTINGS database, where are stored all configuration that user set before.
-
-Then is possible to download both files with different information but depending on the current trial name.
-
-PLEASE MAKE SURE THAT THE TWO FILES (FROM DATA AND CONFIG) ARE NAMED CORRECLTY AND DIFFERENT.
+Thanks for using 
 
 
