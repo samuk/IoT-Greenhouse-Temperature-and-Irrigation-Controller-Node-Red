@@ -1,11 +1,13 @@
 # IoT-Greenhouse-Temperature-&-Irrigation-Controller-Node-Red
 *This Project was developed as part of the Alliance of Bioversity International & CIAT IoT initiatives.
 
-**This is a full Node-Red flow initially developed for automatically controlling the air temperature inside the greenhouses and the irrigation of the plants for the Bean Physiology Team.
+**This is a full Node-Red flow developed for automatically controlling the air temperature inside the greenhouses and the irrigation of the plants for the Bean Physiology Team.
 
 ***This is one of the projects developed focused on the most important thing in agriculture research, the PLANTS!!!
 
 ***You will find control logic and specific programming based on many years of real experience working with plants of different crops (mainly Beans).
+
+***Developed for beginners and experts in Node-Red programming to have quick interaction between Software and Hardware with an IoT web application easy to implement.
 
 ***The programming uses MQTT and MySQL connections. Developed for any Raspberry Pi use. In addition, a user-friendly dashboard was developed for all users in the world can easily interact remotely and set their own parameters according to their plants' needs.
 
@@ -18,8 +20,8 @@ The Node-Red code:
 - The version of the Node-RED was 1.3.5. However, it is possible to use it in recent versions of Node-Red. Note to in recent versions, the variables must be declared with the type before the name (example: var name_variable;).
 - Keep into account that the programming is connected to the physical output pins of the Pi. This means that must be control actuators (fans, heat extractors, etc) connected through relays to these pins to the system can execute the control action automatically.
 - The same with the irrigation, some valves or pumps must be controlled with relays connected to the Pi outputs.
-- There are providers such as amazon or Waveshare that offer many Hat options for Raspberry Pi with relays included. example: https://www.waveshare.com/product/raspberry-pi/hats.htm
-- 
+- There are providers such as Amazon or Waveshare that offer many Hat options for Raspberry Pi with relays included. Example: https://www.waveshare.com/product/raspberry-pi/hats.htm
+- In normal conditions 
 In addition by setting personalized parameters is possible to store the data in a MySQL database and download them in a CSV format.
 //User Parameters Flow------------------------------
 //AFter unexpected reboot the system must be initialized with previously 
