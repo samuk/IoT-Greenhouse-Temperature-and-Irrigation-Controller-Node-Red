@@ -1,8 +1,12 @@
 # IoT-Greenhouse-Temperature-&-Irrigation-Controller-Node-Red
 *This Project was developed as part of the Alliance of Bioversity International & CIAT IoT initiatives.
+
 **Initially developed for automatically controlling the air temperature inside the greenhouses and the irrigation of the plants for the Bean Physiology Team.
+
 ***This is one of the projects developed focused on the most important thing in agriculture research, the PLANTS!!!
+
 ***You will find control logic and specific programming based on many years of real experience working with plants of different crops (mainly Beans).
+
 ***The programming uses MQTT and MySQL connections. Developed for any Raspberry Pi use. In addition, a user-friendly dashboard was developed for all users in the world can easily interact remotely and set their own parameters according to their plants' needs.
 
 *This project involved collaboration with many plant scientists in the Alliance of Bioversity International & CIAT. Special thanks to Drs. Milan Urban, Ph.D.; Steve Beebe, Ph.D.; for their invaluable support and funding. And Eng Harold Diaz, my colleague who began whit these implementations and developed the first version used as a basic template for this project.
