@@ -1,7 +1,7 @@
 # IoT-Greenhouse-Temperature-&-Irrigation-Controller-Node-Red
 *This Project was developed as part of the Alliance of Bioversity International & CIAT IoT initiatives.
 
-*Initially developed for automatically controlling the air temperature inside the greenhouses and the irrigation of the plants for the Bean Physiology Team.
+**This is a full Node-Red flow initially developed for automatically controlling the air temperature inside the greenhouses and the irrigation of the plants for the Bean Physiology Team.
 
 ***This is one of the projects developed focused on the most important thing in agriculture research, the PLANTS!!!
 
