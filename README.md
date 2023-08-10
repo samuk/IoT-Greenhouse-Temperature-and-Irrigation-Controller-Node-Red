@@ -37,6 +37,7 @@ All flows and some nodes include comments inside to easily understand the code.
 In addition by setting personalized parameters is possible to store the data in a MySQL database and download them in a CSV format.
 
 - User Parameters Flow
+
 ![App_config](https://github.com/Dpineda1996/IoT-MQTT-Temperature-Controller-Node-Red/assets/77678151/21a6499e-a738-4e1a-a2bf-7f4303fa4fdb)
 
 You will find here: 
@@ -48,6 +49,7 @@ Set the user and experiment information and email where alerts will be sent.
 apply the configuration selected and extracted from MySQL after an unexpected reboot
 
 - Alarms
+- 
 You will find here:
 
 The nodes are necessary to alert the user when temperature or humidity is over the previously set reference limits.
@@ -62,31 +64,33 @@ Sensors data provisional replace for precise the control logic, in case of some 
 
 Calculate the average data of the Temperature, Humidity, Dew point & VPD.
 
-//Control--------------------------
-Readme
-This is based on a system controlled by 
-relays connected to the Raspberry Pi and an additional electrical power system to control motors.
+- Control
 
-These motors are working as heat extractors (extractors/fans), and will be controlled regarding to the data from sensors and references set by user in dashboard.
+You will find here:
+
+This is based on a system controlled by  relays connected to the Raspberry Pi and an additional electrical power system to control motors.
+
+These motors are working as heat extractors (extractors/fans) and will be controlled regarding the data from sensors and references set by the user in the dashboard.
 
 There are four extractors connected to the pins 29,31,33 and 36 of the Raspberry Pi. We called them:
+
 Fan left 1 (fl1)
 Fan left 2 (fl2)
 Fan right 1 (fr1)
 Fan right 2 (fr2)
 
+Users can set the reference values for temperature control
+fref1 = Temperature during the day, fref2 = Temperature to step change and prevent high gradient rate, fref3 = Temperature during the night
 
-//User can set the reference values for temperature control
-//fref1 = Temperature during the day
-//fref2 = Temperature to step change and prevent high gradient rate
-//fref3 = Temperature during the night
+The day and night limits were created to control the temperature in parameters near real behavior. This means that normally, there are higher temperatures during the day than at night. So, this affects the plants and for that reason, the programming includes the possibility to the user can set the reference temperatures to be controlled automatically in these periods of time daily.
 
-//The next line is for define the day and night limits
-//between fTime2 and fTime 3 is day
-//between fTime4 and fTime1 is night
-//between fTime1 and fTime2 & fTime3 and fTime4 are the steps,
-//where the temperature should be set in a middle point to do not
-//apply high changes directly to the plants
+Note to:
+
+Between fTime2 and fTime 3 is day
+
+Between fTime4 and fTime1 is night
+
+Between fTime1 and fTime2 & fTime3 and fTime4 are the steps, where the temperature should be set in a middle point to not apply high changes directly to the plants.
 
 //the extractors will be turned on if temperature is 1°C above from reference in that period of time
 //otherwise will be turned off
