@@ -123,7 +123,7 @@ Note that are created two files to be downloaded. One file is from the DATA data
 
 PLEASE MAKE SURE THAT THE TWO FILES (FROM DATA AND CONFIG) ARE NAMED CORRECTLY AND DIFFERENTLY.
 
-- On the other hand, we have tested Raspberry Pi under greenhouse conditions (high temperatures and humidity) and we are totally sure that these ones are robust enough to work perfectly in these hard environments. This enables the possibility to have trustable sophisticated datalogger and controllers at low-cost using IoT.
+We have tested Raspberry Pi under greenhouse conditions (high temperatures and humidity) and we are totally sure that these ones are robust enough to work perfectly in these hard environments. This enables the possibility to have trustable sophisticated datalogger and controllers at low-cost using IoT.
 
 Hope this will be useful for your projects. Let´s improve the plant research process together!!!
 
