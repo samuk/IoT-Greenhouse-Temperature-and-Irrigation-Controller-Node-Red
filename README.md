@@ -78,6 +78,7 @@ There are four extractors (in our project) connected to pins 29,31,33 and 36 of 
 Fan left 1 (fl1), Fan left 2 (fl2), Fan right 1 (fr1), Fan right 2 (fr2).
 
 Users can set the reference values for temperature control
+
 fref1 = Temperature during the day. 
 
 fref2 = Temperature to step change and prevent high gradient rate. 
