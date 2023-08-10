@@ -7,7 +7,7 @@
 
 ***You will find control logic and specific programming based on many years of real experience working with plants of different crops (mainly Beans).
 
-***Developed for beginners and experts in Node-Red programming to have quick interaction between Software and Hardware with an IoT web application easy to implement.
+***Developed for beginners and experts in Node-Red programming to have quick interaction between Software and Hardware with easy-to-implement IoT web applications.
 
 ***The programming uses MQTT and MySQL connections. Developed for any Raspberry Pi use. In addition, a user-friendly dashboard was developed for all users in the world can easily interact remotely and set their own parameters according to their plants' needs.
 
