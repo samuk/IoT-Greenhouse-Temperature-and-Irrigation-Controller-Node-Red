@@ -17,7 +17,7 @@ The Node-Red code:
 - Node-Red full programming for greenhouse IoT automation using Raspberry Pi.
 - The JSON programming code is able to control the temperature in a greenhouse based on data from Wi-Fi sensors connected through MQTT (deploy after setting your personalized configuration). 
 - This system was tested in Raspberry Pi 4, Zero, and Zero W. However you can deploy it on Raspberry Pi 3 also.
-- The version of the Node-RED was 1.3.5. However, it is possible to use it in recent versions of Node-Red. Note to in recent versions (recent NodeJs versions), the variables must be declared with the type before the name (example: var name_variable;).
+- The version of the Node-RED was 1.3.5. However, it is possible to use it in recent versions of Node-Red. Note to in recent versions (newest NodeJs versions), the variables must be declared with the type before the name (example: var name_variable;).
 - Keep into account that the programming is connected to the physical output pins of the Pi. This means that must be control actuators (fans, heat extractors, etc) connected through relays to these pins to the system can execute the control action automatically.
 - The same with the irrigation, some valves or pumps must be controlled with relays connected to the Pi outputs.
 - There are providers such as Amazon or Waveshare that offer many Hat options for Raspberry Pi with relays included. Example: https://www.waveshare.com/product/raspberry-pi/hats.htm
@@ -26,6 +26,8 @@ The Node-Red code:
 - The sensors used were the sonoff TH Elite (https://sonoff.tech/product/diy-smart-switches/th-elite/) with a SI7021 Temperature & Humidity sensor.
 - Each one of these sensors must be TASMOTIZED (recommendable using VisualStudio with the developed by Theo Arends https://github.com/arendst/Tasmota).
 - However, it is possible to use this system with any MQTT sensor.
+- Remember that it is necessary to install the mosquitto broker on the Raspberry Pi (https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/).
+- Necessary to install MariaDB server in Raspberry Pi for MySQL use (https://raspberrytips.com/install-mariadb-raspberry-pi/).
 In addition by setting personalized parameters is possible to store the data in a MySQL database and download them in a CSV format.
 //User Parameters Flow------------------------------
 //AFter unexpected reboot the system must be initialized with previously 
