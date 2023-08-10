@@ -29,16 +29,16 @@
 - Remember that it is necessary to install the mosquitto broker on the Raspberry Pi (https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/).
 - Necessary to install MariaDB server in Raspberry Pi for MySQL use (https://raspberrytips.com/install-mariadb-raspberry-pi/).
 - Remember that you need to install the missing modules that Node-Red will notify you after importing the flows.
+- In addition by setting personalized parameters is possible to store the data in a MySQL database and download them in a CSV format.
 
 # The Node-Red Flows:
 
 All flows and some nodes include comments inside to easily understand the code.
-   
-In addition by setting personalized parameters is possible to store the data in a MySQL database and download them in a CSV format.
 
 - User Parameters Flow
 
 ![App_config](https://github.com/Dpineda1996/IoT-MQTT-Temperature-Controller-Node-Red/assets/77678151/21a6499e-a738-4e1a-a2bf-7f4303fa4fdb)
+Web User Application - Settings configuration
 
 You will find here: 
 
