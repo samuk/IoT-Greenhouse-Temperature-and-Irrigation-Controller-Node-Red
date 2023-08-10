@@ -13,7 +13,7 @@
 
 *This project involved collaboration with many plant scientists in the Alliance of Bioversity International & CIAT. Special thanks to Drs. Milan Urban, Ph.D.; Steve Beebe, Ph.D.; for their invaluable support and funding. And Eng Harold Diaz, my colleague who began whit these implementations and developed the first version used as a basic template for this project.
 
-# The Node-Red code:
+# Before starting:
 - Node-Red full programming for greenhouse IoT automation using Raspberry Pi.
 - The JSON programming code is able to control the temperature in a greenhouse based on data from Wi-Fi sensors connected through MQTT (deploy after setting your personalized configuration). 
 - This system was tested in Raspberry Pi 4, Zero, and Zero W. However you can deploy it on Raspberry Pi 3 also.
@@ -30,7 +30,7 @@
 - Necessary to install MariaDB server in Raspberry Pi for MySQL use (https://raspberrytips.com/install-mariadb-raspberry-pi/).
 - Remember that you need to install the missing modules that Node-Red will notify you after importing the flows.
 
-# The programming was divided in sub-flows:
+# The Node-Red Flows:
 
    All flows and some nodes includes comments inside to easily understand the code.
    
