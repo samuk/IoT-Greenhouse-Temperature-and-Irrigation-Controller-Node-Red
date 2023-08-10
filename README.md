@@ -85,7 +85,7 @@ fref2 = Temperature to step change and prevent high gradient rate.
 
 fref3 = Temperature during the night.
 
-The day and night limits were created to control the temperature in parameters near real behavior. This means that normally, there are higher temperatures during the day than at night. So, this affects the plants and for that reason, the programming includes the possibility for the user can set the reference temperatures to be controlled automatically in these periods daily.
+The day and night limits were created to control the temperature in parameters near real behavior. This means that in real conditions in the field, there are higher temperatures during the day than at night. So, this affects the plants and for that reason, the programming includes the possibility for the user can set the reference temperatures to be controlled automatically in these periods daily and simulate an environment close to real scenarios.
 
 Note to:
 
