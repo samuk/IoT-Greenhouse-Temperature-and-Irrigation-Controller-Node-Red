@@ -1,7 +1,7 @@
 # IoT-Greenhouse-Temperature-&-Irrigation-Controller-Node-Red
 *This Project was developed as part of the Alliance of Bioversity International & CIAT IoT initiatives.
 
-**This is a full Node-Red flow developed for automatically controlling the air temperature inside the greenhouses and the irrigation of the plants for the Bean Physiology Team.
+**This is a full Node-Red flow that was initially developed for automatically controlling the air temperature inside the greenhouses and the irrigation of the plants for the Bean Physiology Team. However, it can be implemented in other experiment locations where temperature or irrigation must be controlled.
 
 ***This is one of the projects developed focused on the most important thing in agriculture research, the PLANTS!!!
 
@@ -17,11 +17,15 @@ The Node-Red code:
 - Node-Red full programming for greenhouse IoT automation using Raspberry Pi.
 - The JSON programming code is able to control the temperature in a greenhouse based on data from Wi-Fi sensors connected through MQTT (deploy after setting your personalized configuration). 
 - This system was tested in Raspberry Pi 4, Zero, and Zero W. However you can deploy it on Raspberry Pi 3 also.
-- The version of the Node-RED was 1.3.5. However, it is possible to use it in recent versions of Node-Red. Note to in recent versions, the variables must be declared with the type before the name (example: var name_variable;).
+- The version of the Node-RED was 1.3.5. However, it is possible to use it in recent versions of Node-Red. Note to in recent versions (recent NodeJs versions), the variables must be declared with the type before the name (example: var name_variable;).
 - Keep into account that the programming is connected to the physical output pins of the Pi. This means that must be control actuators (fans, heat extractors, etc) connected through relays to these pins to the system can execute the control action automatically.
 - The same with the irrigation, some valves or pumps must be controlled with relays connected to the Pi outputs.
 - There are providers such as Amazon or Waveshare that offer many Hat options for Raspberry Pi with relays included. Example: https://www.waveshare.com/product/raspberry-pi/hats.htm
-- In normal conditions 
+- In normal conditions, heat extractors are turned ON to decrease or OFF to increase the temperatures inside the greenhouses. But also for increasing the temperature, heaters can be adapted to this system.
+- All devices connected through MQTT must be in the same Wi-Fi network. And the Raspberry Pi will be used as a broker.
+- The sensors used were the sonoff TH Elite (https://sonoff.tech/product/diy-smart-switches/th-elite/) with a SI7021 Temperature & Humidity sensor.
+- Each one of these sensors must be TASMOTIZED (recommendable using VisualStudio with the developed by Theo Arends https://github.com/arendst/Tasmota).
+- However, it is possible to use this system with any MQTT sensor.
 In addition by setting personalized parameters is possible to store the data in a MySQL database and download them in a CSV format.
 //User Parameters Flow------------------------------
 //AFter unexpected reboot the system must be initialized with previously 
