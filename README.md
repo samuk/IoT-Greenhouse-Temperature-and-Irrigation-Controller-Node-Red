@@ -1,3 +1,20 @@
+
+# This is a fork of IoT-Greenhouse-Temperature-&-Irrigation-Controller-Node-Red
+
+See details of that project below.
+
+This project adapts to integrate with
+
+Olimex iMX8 hardware
+- [IOT stack](https://sensorsiot.github.io/IOTstack/) for containerisation
+- [InfluxDB]() Container for long term logging
+- Mosquitto Container to run broker
+- MariaDB Container to run MySQL 
+- Zigbee2MQTT for Zigbee devices
+- Modbus2MQTT for Modbus devices
+ -Can2MQTT for Canbus devices
+
+
 # IoT-Greenhouse-Temperature-&-Irrigation-Controller-Node-Red
 *This Project was developed as part of the Alliance of Bioversity International & CIAT IoT initiatives.
 
