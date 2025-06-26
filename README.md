@@ -5,14 +5,15 @@ See details of that project below.
 
 This project adapts to integrate with
 
-Olimex iMX8 hardware
+[Olimex iMX8 hardware](https://www.olimex.com/Products/SOM/NXP-iMX8/iMX8MP-SOM-EVB-IND/open-source-hardware)
 - [IOT stack](https://sensorsiot.github.io/IOTstack/) for containerisation
-- [InfluxDB]() Container for long term logging
-- Mosquitto Container to run broker
-- MariaDB Container to run MySQL 
-- Zigbee2MQTT for Zigbee devices
-- Modbus2MQTT for Modbus devices
- -Can2MQTT for Canbus devices
+- [InfluxDB](https://sensorsiot.github.io/IOTstack/Containers/InfluxDB/) Container for long term logging
+- [Mosquitto](https://sensorsiot.github.io/IOTstack/Containers/Mosquitto/) Container to run broker
+- [MariaDB](https://sensorsiot.github.io/IOTstack/Containers/MariaDB/) Container to run MySQL 
+- [Zigbee2MQTT](https://sensorsiot.github.io/IOTstack/Containers/Zigbee2MQTT/) Container for Zigbee devices
+- [Modbus2MQTT](https://github.com/Instathings/modbus2mqtt) for Modbus devices
+- [Can2MQTT](https://github.com/c3re/can2mqtt) for Canbus devices
+- [ESPhome](https://community.home-assistant.io/t/solved-config-example-of-how-to-retrofit-mqtt-onto-devices-that-previously-used-api/709391/5) for MQTT from WiFi devices
 
 
 # IoT-Greenhouse-Temperature-&-Irrigation-Controller-Node-Red
