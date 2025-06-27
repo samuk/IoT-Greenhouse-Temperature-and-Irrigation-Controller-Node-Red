@@ -9,7 +9,7 @@ See details of the original project below. This project adapts that work to inte
 - [Mosquitto](https://sensorsiot.github.io/IOTstack/Containers/Mosquitto/) Container to run broker
 - [MariaDB](https://sensorsiot.github.io/IOTstack/Containers/MariaDB/) Container to run MySQL 
 - [Zigbee2MQTT](https://sensorsiot.github.io/IOTstack/Containers/Zigbee2MQTT/) Container for Zigbee devices, eg [B-parasite sensor](https://github.com/rbaron/b-parasite?tab=readme-ov-file)
-- [Modbus2MQTT](https://github.com/Instathings/modbus2mqtt) for Modbus devices, eg [OLIMEXINO-STM32F3](https://www.olimex.com/Products/Duino/STM32/OLIMEXINO-STM32F3/open-source-hardware) & [MOD-RS485](https://www.olimex.com/Products/Modules/Interface/MOD-RS485-ISO/open-source-hardware) or [SDM01 Energy meter](https://www.bituo-technik.com/kb/sdm01-combo-3pn-3x1pn/)
+- [Modbus2MQTT](https://github.com/Instathings/modbus2mqtt) for Modbus devices, eg [OLIMEXINO-STM32F3](https://www.olimex.com/Products/Duino/STM32/OLIMEXINO-STM32F3/open-source-hardware) & [MOD-RS485](https://www.olimex.com/Products/Modules/Interface/MOD-RS485-ISO/open-source-hardware) or [SPE](https://store.arduino.cc/products/uno-spe-shield)
 - [Can2MQTT](https://github.com/c3re/can2mqtt) for Canbus devices, eg [Rootsense](https://docs.openhydroponics.com/hardware/rootsense.html)
 - [BACnet](https://github.com/BiancoRoyal/node-red-contrib-bacnet) Building Automation Control (BAC) communications
 - [OPC-UA](https://github.com/BiancoRoyal/node-opcua?tab=readme-ov-file) Open Platform Communications.
