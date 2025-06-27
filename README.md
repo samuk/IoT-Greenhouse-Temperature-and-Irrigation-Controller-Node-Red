@@ -11,6 +11,7 @@ See details of the original project below. This project adapts that work to inte
 - [Zigbee2MQTT](https://sensorsiot.github.io/IOTstack/Containers/Zigbee2MQTT/) Container for Zigbee devices, eg [B-parasite sensor]()
 - [Modbus2MQTT](https://github.com/Instathings/modbus2mqtt) for Modbus devices, eg [OLIMEXINO-STM32F3](https://www.olimex.com/Products/Duino/STM32/OLIMEXINO-STM32F3/open-source-hardware) or [SDM01 Energy meter](https://www.bituo-technik.com/kb/sdm01-combo-3pn-3x1pn/)
 - [Can2MQTT](https://github.com/c3re/can2mqtt) for Canbus devices, eg [Rootsense](https://docs.openhydroponics.com/hardware/rootsense.html)
+- [BACnet](https://github.com/BiancoRoyal/node-red-contrib-bacnet) Building Automation Control (BAC) communications
 - [ESPhome](https://community.home-assistant.io/t/solved-config-example-of-how-to-retrofit-mqtt-onto-devices-that-previously-used-api/709391/5) for MQTT from WiFi devices
 
 
