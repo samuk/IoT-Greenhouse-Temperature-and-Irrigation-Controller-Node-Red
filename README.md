@@ -1,18 +1,16 @@
 
-# This is a fork of IoT-Greenhouse-Temperature-&-Irrigation-Controller-Node-Red
+# Fork of IoT-Greenhouse-Temperature-&-Irrigation-Controller
 
-See details of that project below.
+See details of the original project below. This project adapts that work to integrate with
 
-This project adapts to integrate with
-
-[Olimex iMX8 hardware](https://www.olimex.com/Products/SOM/NXP-iMX8/iMX8MP-SOM-EVB-IND/open-source-hardware)
+[Olimex iMX8 open hardware SBC](https://www.olimex.com/Products/SOM/NXP-iMX8/iMX8MP-SOM-EVB-IND/open-source-hardware) 
 - [IOT stack](https://sensorsiot.github.io/IOTstack/) for containerisation
 - [InfluxDB](https://sensorsiot.github.io/IOTstack/Containers/InfluxDB/) Container for long term logging
 - [Mosquitto](https://sensorsiot.github.io/IOTstack/Containers/Mosquitto/) Container to run broker
 - [MariaDB](https://sensorsiot.github.io/IOTstack/Containers/MariaDB/) Container to run MySQL 
-- [Zigbee2MQTT](https://sensorsiot.github.io/IOTstack/Containers/Zigbee2MQTT/) Container for Zigbee devices
-- [Modbus2MQTT](https://github.com/Instathings/modbus2mqtt) for Modbus devices
-- [Can2MQTT](https://github.com/c3re/can2mqtt) for Canbus devices
+- [Zigbee2MQTT](https://sensorsiot.github.io/IOTstack/Containers/Zigbee2MQTT/) Container for Zigbee devices, eg [B-parasite sensor]()
+- [Modbus2MQTT](https://github.com/Instathings/modbus2mqtt) for Modbus devices, eg [OLIMEXINO-STM32F3](https://www.olimex.com/Products/Duino/STM32/OLIMEXINO-STM32F3/open-source-hardware) or [SDM01 Energy meter](https://www.bituo-technik.com/kb/sdm01-combo-3pn-3x1pn/)
+- [Can2MQTT](https://github.com/c3re/can2mqtt) for Canbus devices, eg [Rootsense](https://docs.openhydroponics.com/hardware/rootsense.html)
 - [ESPhome](https://community.home-assistant.io/t/solved-config-example-of-how-to-retrofit-mqtt-onto-devices-that-previously-used-api/709391/5) for MQTT from WiFi devices
 
 
