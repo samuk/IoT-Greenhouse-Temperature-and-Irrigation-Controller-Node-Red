@@ -4,7 +4,7 @@
 See details of the original project below. This project adapts that work to integrate with
 
 [Olimex iMX8 open hardware SBC](https://www.olimex.com/Products/SOM/NXP-iMX8/iMX8MP-SOM-EVB-IND/open-source-hardware) 
-- [Buildroot](https://github.com/OLIMEX/buildroot-imx) with [Docker](https://www.reddit.com/r/embedded/comments/120r5za/comment/jdy1hg0/) or [OpenWRT](https://github.com/nxp-imx/imx_openwrt/tree/imx-openwrt-24.10) (readonly FS) as [Docker host](https://openwrt.org/docs/guide-user/virtualization/docker_host) [Maybe](https://forum.openwrt.org/t/is-openwrt-worth-as-operative-system-for-high-performance-hardware/114434/9)
+- [Buildroot](https://github.com/OLIMEX/buildroot-imx) & [RT patch]( https://gitlab.com/buildroot.org/buildroot/-/tree/master/package?ref_type=heads) with [Docker](https://www.reddit.com/r/embedded/comments/120r5za/comment/jdy1hg0/) 
 - [IOT stack](https://sensorsiot.github.io/IOTstack/) for container compose files
 - [InfluxDB](https://sensorsiot.github.io/IOTstack/Containers/InfluxDB/) Container for long term logging
 - [Mosquitto](https://sensorsiot.github.io/IOTstack/Containers/Mosquitto/) Container to run broker
@@ -15,6 +15,9 @@ See details of the original project below. This project adapts that work to inte
 - [BACnet](https://github.com/BiancoRoyal/node-red-contrib-bacnet) Building Automation Control (BAC) communications
 - [OPC-UA](https://github.com/BiancoRoyal/node-opcua?tab=readme-ov-file) Open Platform Communications.
 - [ESPhome](https://community.home-assistant.io/t/solved-config-example-of-how-to-retrofit-mqtt-onto-devices-that-previously-used-api/709391/5) for MQTT from WiFi devices
+
+Discarded ideas
+[OpenWRT](https://github.com/nxp-imx/imx_openwrt/tree/imx-openwrt-24.10) (readonly FS) as [Docker host](https://openwrt.org/docs/guide-user/virtualization/docker_host) [Maybe](https://forum.openwrt.org/t/is-openwrt-worth-as-operative-system-for-high-performance-hardware/114434/9)
 
 
 # IoT-Greenhouse-Temperature-&-Irrigation-Controller-Node-Red
