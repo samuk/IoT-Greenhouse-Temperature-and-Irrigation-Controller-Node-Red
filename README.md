@@ -4,7 +4,7 @@
 See details of the original project below. This project adapts that work to integrate with
 
 [Olimex iMX8 open hardware SBC](https://www.olimex.com/Products/SOM/NXP-iMX8/iMX8MP-SOM-EVB-IND/open-source-hardware) 
-- [OpenWRT](https://github.com/nxp-imx/imx_openwrt/tree/imx-openwrt-24.10) (readonly FS) as [Docker host](https://openwrt.org/docs/guide-user/virtualization/docker_host)
+- [OpenWRT](https://github.com/nxp-imx/imx_openwrt/tree/imx-openwrt-24.10) (readonly FS) as [Docker host](https://openwrt.org/docs/guide-user/virtualization/docker_host) [Maybe](https://forum.openwrt.org/t/is-openwrt-worth-as-operative-system-for-high-performance-hardware/114434/9)
 - [IOT stack](https://sensorsiot.github.io/IOTstack/) for container compose files
 - [InfluxDB](https://sensorsiot.github.io/IOTstack/Containers/InfluxDB/) Container for long term logging
 - [Mosquitto](https://sensorsiot.github.io/IOTstack/Containers/Mosquitto/) Container to run broker
