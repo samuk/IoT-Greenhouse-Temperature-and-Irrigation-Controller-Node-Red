@@ -14,7 +14,10 @@ See details of the original project below. This project adapts that work to inte
 - [Can2MQTT](https://github.com/c3re/can2mqtt) for Canbus devices, eg [Rootsense](https://docs.openhydroponics.com/hardware/rootsense.html)
 
 # Hardware
+- [MOD IO](https://www.olimex.com/Products/Modules/IO/MOD-IO/open-source-hardware) 4x Relay, IO
+- [Hat rack](https://plasmadan.com/product/hat-rack-mini-raspberry-pi-hat-mount/) to support hats
 - [Sequent](https://sequentmicrosystems.com/) Closed, but interesting to support
+- 
 
 # Discarded ideas
 - [OpenWRT](https://github.com/nxp-imx/imx_openwrt/tree/imx-openwrt-24.10) (readonly FS) as [Docker host](https://openwrt.org/docs/guide-user/virtualization/docker_host) [Maybe](https://forum.openwrt.org/t/is-openwrt-worth-as-operative-system-for-high-performance-hardware/114434/9)
