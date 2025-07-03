@@ -5,7 +5,8 @@ See details of the original project below. This project adapts that work to inte
 
 [Olimex iMX8 open hardware SBC](https://www.olimex.com/Products/SOM/NXP-iMX8/iMX8MP-SOM-EVB-IND/open-source-hardware) produced until [2036](https://www.nxp.com/products/nxp-product-information/nxp-product-programs/product-longevity:PRDCT_LONGEVITY_HM)
  - [Buildroot](https://github.com/OLIMEX/buildroot-imx) & [RT patch]( https://gitlab.com/buildroot.org/buildroot/-/tree/master/package?ref_type=heads) with [Docker](https://www.reddit.com/r/embedded/comments/120r5za/comment/jdy1hg0/) [Docker info](https://hub.mender.io/t/adding-docker-and-docker-compose-to-a-yocto-build/6078)
-- [IOT stack](https://sensorsiot.github.io/IOTstack/) Using their container compose files
+ - [Portainer](https://www.portainer.io/)
+- [IOT stack compose](https://sensorsiot.github.io/IOTstack/) Reusing their compose files in [Buildah](https://github.com/containers/buildah?tab=readme-ov-file)
 - [InfluxDB](https://sensorsiot.github.io/IOTstack/Containers/InfluxDB/) Container for long term logging
 - [Mosquitto](https://sensorsiot.github.io/IOTstack/Containers/Mosquitto/) Container to run broker
 - [MariaDB](https://sensorsiot.github.io/IOTstack/Containers/MariaDB/) Container to run MySQL 
