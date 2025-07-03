@@ -4,7 +4,7 @@
 See details of the original project below. This project adapts that work to integrate with
 
 [Olimex iMX8 open hardware SBC](https://www.olimex.com/Products/SOM/NXP-iMX8/iMX8MP-SOM-EVB-IND/open-source-hardware) produced until [2036](https://www.nxp.com/products/nxp-product-information/nxp-product-programs/product-longevity:PRDCT_LONGEVITY_HM)
-- [Yocto](https://youtu.be/kxCBwUviO-Q?si=RPGIBIPhucpSWwRQ&t=400) or [Buildroot](https://github.com/OLIMEX/buildroot-imx) & [RT patch]( https://gitlab.com/buildroot.org/buildroot/-/tree/master/package?ref_type=heads) with [Docker](https://www.reddit.com/r/embedded/comments/120r5za/comment/jdy1hg0/) [Docker info](https://hub.mender.io/t/adding-docker-and-docker-compose-to-a-yocto-build/6078)
+ - [Buildroot](https://github.com/OLIMEX/buildroot-imx) & [RT patch]( https://gitlab.com/buildroot.org/buildroot/-/tree/master/package?ref_type=heads) with [Docker](https://www.reddit.com/r/embedded/comments/120r5za/comment/jdy1hg0/) [Docker info](https://hub.mender.io/t/adding-docker-and-docker-compose-to-a-yocto-build/6078)
 - [IOT stack](https://sensorsiot.github.io/IOTstack/) Using their container compose files
 - [InfluxDB](https://sensorsiot.github.io/IOTstack/Containers/InfluxDB/) Container for long term logging
 - [Mosquitto](https://sensorsiot.github.io/IOTstack/Containers/Mosquitto/) Container to run broker
@@ -20,6 +20,7 @@ See details of the original project below. This project adapts that work to inte
 - 
 
 # Discarded ideas
+- [Yocto](https://youtu.be/kxCBwUviO-Q?si=RPGIBIPhucpSWwRQ&t=400) or
 - [OpenWRT](https://github.com/nxp-imx/imx_openwrt/tree/imx-openwrt-24.10) (readonly FS) as [Docker host](https://openwrt.org/docs/guide-user/virtualization/docker_host) [Maybe](https://forum.openwrt.org/t/is-openwrt-worth-as-operative-system-for-high-performance-hardware/114434/9)
 - [BACnet](https://github.com/BiancoRoyal/node-red-contrib-bacnet) Building Automation Control (BAC) communications
 - [OPC-UA](https://github.com/BiancoRoyal/node-opcua?tab=readme-ov-file) Open Platform Communications.
