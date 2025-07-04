@@ -13,7 +13,7 @@ See details of the original project below. This project adapts that work to inte
 - [B-parasite sensor](https://github.com/rbaron/b-parasite?tab=readme-ov-file)
 - [OLIMEXINO-STM32F3](https://www.olimex.com/Products/Duino/STM32/OLIMEXINO-STM32F3/open-source-hardware) & [MOD-RS485](https://www.olimex.com/Products/Modules/Interface/MOD-RS485-ISO/open-source-hardware) or [SPE](https://store.arduino.cc/products/uno-spe-shield) running [FreeRTOS](https://github.com/alejoseb/Modbus-STM32-HAL-FreeRTOS)
 - [MOD IO](https://www.olimex.com/Products/Modules/IO/MOD-IO/open-source-hardware) 4x Relay, IO
-- [Custom DIN rail/ hat rack PCB](https://easyeda.com/editor#id=0fb0bc8a8a284d4f8c591254ed1418f7) to mount Olimex carrier
+- [Custom DIN rail/ hat rack PCB](https://easyeda.com/editor#project_id=ed4b7d9f3bd04f4f8904607c2b001507) to mount Olimex carrier
 - [Hat rack](https://plasmadan.com/product/hat-rack-mini-raspberry-pi-hat-mount/) to support hats
 - [Sequent](https://sequentmicrosystems.com/) Closed, but interesting to support
 
@@ -27,23 +27,24 @@ See details of the original project below. This project adapts that work to inte
 
 -  [Node-RED](https://nodered.org/)  (automation logic),
 -  [Zigbee2MQTT](https://sensorsiot.github.io/IOTstack/Containers/Zigbee2MQTT/) Container for Zigbee devices, eg 
-- [Modbus2MQTT](https://github.com/Instathings/modbus2mqtt) for Modbus devices, eg 
+- [Modbus2MQTT](https://github.com/Instathings/modbus2mqtt) for Modbus devices
  - [Portainer](https://www.portainer.io/) container management
 - [InfluxDB](https://sensorsiot.github.io/IOTstack/Containers/InfluxDB/) time-series logging
 - [Mosquitto](https://sensorsiot.github.io/IOTstack/Containers/Mosquitto/) MQTT broker
-- [MariaDB](https://sensorsiot.github.io/IOTstack/Containers/MariaDB/) Container to run MySQL 
+- [MariaDB](https://sensorsiot.github.io/IOTstack/Containers/MariaDB/) Container to run MySQL
+
+Additional Services
+  
 - [Can2MQTT](https://github.com/c3re/can2mqtt) for Canbus devices, eg [Rootsense](https://docs.openhydroponics.com/hardware/rootsense.html)
 
 # Tools
 - [Buildah](https://github.com/containers/buildah?tab=readme-ov-file) for building NodeRed to include greenhouse automation flow, node-red-contrib-influxdb, node-red-contrib-watchdog
 - Reusing other compose files from [IOT stack](https://sensorsiot.github.io/IOTstack/)
-
            
 # Integration:  
 - Node-RED flows unify input/output from all protocols (Zigbee, Modbus, CANbus, etc.), automate greenhouse/hydroponics logic, and log to InfluxDB.
 - All critical site and sensor data is written to /data on the NVMe.
      
-
 # Backup & Updates:  
 - Backup scripts to regularly save /data (from NVMe) to the SD card  for disaster recovery or maintenance.
 - Operators update the OS by swapping the eMMC chip in the field (no remote flashing).
