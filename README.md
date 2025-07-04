@@ -15,7 +15,7 @@ See details of the original project below. This project adapts that work to inte
 - Relevant environmental, soil, and actuator hardware (relays, pumps, sensors).
 
 - [B-parasite sensor](https://github.com/rbaron/b-parasite?tab=readme-ov-file)
-- [OLIMEXINO-STM32F3](https://www.olimex.com/Products/Duino/STM32/OLIMEXINO-STM32F3/open-source-hardware) & [MOD-RS485](https://www.olimex.com/Products/Modules/Interface/MOD-RS485-ISO/open-source-hardware) or [SPE](https://store.arduino.cc/products/uno-spe-shield) running [FreeRTOS](https://github.com/alejoseb/Modbus-STM32-HAL-FreeRTOS)
+- [OLIMEXINO-STM32F3](https://www.olimex.com/Products/Duino/STM32/OLIMEXINO-STM32F3/open-source-hardware) & [MOD-RS485](https://www.olimex.com/Products/Modules/Interface/MOD-RS485-ISO/open-source-hardware) with [custom shield](https://easyeda.com/editor#id=a863dc0108f74cb184ebf043b9bd98b7|0fb0bc8a8a284d4f8c591254ed1418f7) or [SPE](https://store.arduino.cc/products/uno-spe-shield) running Arduino or [FreeRTOS](https://github.com/alejoseb/Modbus-STM32-HAL-FreeRTOS)
 - [MOD IO](https://www.olimex.com/Products/Modules/IO/MOD-IO/open-source-hardware) 4x Relay, IO
 - [Custom DIN rail/ hat rack PCB](https://easyeda.com/editor#project_id=ed4b7d9f3bd04f4f8904607c2b001507) to mount Olimex carrier
 - [Hat rack](https://plasmadan.com/product/hat-rack-mini-raspberry-pi-hat-mount/) to support hats
