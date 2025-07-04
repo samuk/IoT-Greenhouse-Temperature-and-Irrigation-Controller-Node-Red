@@ -5,6 +5,7 @@ See details of the original project below. This project adapts that work to inte
 
 # Hardware
    - [Olimex iMX8 open hardware SBC](https://www.olimex.com/Products/SOM/NXP-iMX8/iMX8MP-SOM-EVB-IND/open-source-hardware) produced until [2036](https://www.nxp.com/products/nxp-product-information/nxp-product-programs/product-longevity:PRDCT_LONGEVITY_HM) board  with a removable eMMC chip for the operating system (read-only root).
+
 - M.2 NVMe SSD  for the persistent /data partition (labelled data through its filesystem label).
 - SD card slot  used exclusively for scheduled backup of /data
 - Required fieldbus/protocol support (e.g., Zigbee USB dongle, Modbus/RS485, optional CANbus, LoRa/Meshtastic).
