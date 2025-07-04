@@ -24,15 +24,18 @@ See details of the original project below. This project adapts that work to inte
 
   Core Docker stack :
 
--  Node-RED  (automation logic),
+-  [Node-RED](https://nodered.org/)  (automation logic),
 -  [Zigbee2MQTT](https://sensorsiot.github.io/IOTstack/Containers/Zigbee2MQTT/) Container for Zigbee devices, eg 
 - [Modbus2MQTT](https://github.com/Instathings/modbus2mqtt) for Modbus devices, eg 
  - [Portainer](https://www.portainer.io/) container management
-- [IOT stack compose](https://sensorsiot.github.io/IOTstack/) Reusing their compose files in [Buildah](https://github.com/containers/buildah?tab=readme-ov-file)
 - [InfluxDB](https://sensorsiot.github.io/IOTstack/Containers/InfluxDB/) time-series logging
 - [Mosquitto](https://sensorsiot.github.io/IOTstack/Containers/Mosquitto/) MQTT broker
 - [MariaDB](https://sensorsiot.github.io/IOTstack/Containers/MariaDB/) Container to run MySQL 
 - [Can2MQTT](https://github.com/c3re/can2mqtt) for Canbus devices, eg [Rootsense](https://docs.openhydroponics.com/hardware/rootsense.html)
+
+# Tools
+- [Buildah](https://github.com/containers/buildah?tab=readme-ov-file) for building NodeRed to include greenhouse automation flow, node-red-contrib-influxdb, node-red-contrib-watchdog
+- Reusing other compose files from [IOT stack](https://sensorsiot.github.io/IOTstack/)
 
            
 # Integration:  
@@ -44,6 +47,26 @@ See details of the original project below. This project adapts that work to inte
 - Backup scripts to regularly save /data (from NVMe) to the SD card  for disaster recovery or maintenance.
 - Operators update the OS by swapping the eMMC chip in the field (no remote flashing).
 - Clear operator documentation for backup/restore, field upgrades, and troubleshooting.
+
+# Evaluation of existing node-red flow
+
+| Function / Feature         | Present in Flow | Type of Node(s)           | Purpose / Comments                                                      |
+|----------------------------|:---------------:|---------------------------|-------------------------------------------------------------------------|
+| **Sensor Input**           |      Yes        | MQTT In, GPIO/Analog      | Monitors temperature, humidity, soil moisture, water level, etc.        |
+| **Actuator Control**       |      Yes        | GPIO, MQTT Out            | Controls relays, pumps, fans, and light circuits.                       |
+| **MQTT Integration**       |      Yes        | MQTT In/Out               | All communication with external devices (Zigbee2MQTT, etc).             |
+| **Automation Logic**       |      Yes        | Function, Switch, Change  | Timers, thresholds, rules for climate control and irrigation.           |
+| **Scheduling/Timing**      |      Yes        | Inject, Delay, Function   | Start/stop irrigation, fans, alarms at time intervals.                  |
+| **Alerting**               |      Yes        | E-mail, (output)          | Sends notifications on abnormal readings or device status.              |
+| **Dashboard UI**           |      Yes        | Node-RED Dashboard        | Local web interface for monitoring, toggling relays, setting values.    |
+| **Persistence/State**      |   Minimal       | N/A                       | State is mostly in RAM; little or no flow/global context persistence.   |
+| **Logging/History**        |   Minimal       | MQTT, Debug               | Intended for MQTT logging; no direct InfluxDB, file, or other logging.  |
+| **Field Configurability**  |   Basic         | Change, Dashboard         | Thresholds/schedules hard-coded or set via dashboard inputs.            |
+| **Fault/Health Handling**  |   Minimal       | N/A                       | Few or no watchdogs, failsafes, or device offline checks.               |
+| **Expandability**          |   Good          | N/A                       | Flow is modular—can add zones/sensors easily.                           |
+| **User Authentication**    |      No         | N/A                       | Node-RED Dashboard default; no enhanced authentication or roles.        |
+| **Backup/Restore Flows**   |      No         | N/A                       | Not present in the flow.                                                |
+| **Standards Integration**  | Yes (MQTT)      | MQTT                      | Well-suited for integration with Zigbee2MQTT or existing MQTT brokers.  |
      
 # Discarded ideas
 - [Yocto](https://youtu.be/kxCBwUviO-Q?si=RPGIBIPhucpSWwRQ&t=400) or
