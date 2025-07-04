@@ -67,6 +67,12 @@ See details of the original project below. This project adapts that work to inte
 | **User Authentication**    |      No         | N/A                       | Node-RED Dashboard default; no enhanced authentication or roles.        |
 | **Backup/Restore Flows**   |      No         | N/A                       | Not present in the flow.                                                |
 | **Standards Integration**  | Yes (MQTT)      | MQTT                      | Well-suited for integration with Zigbee2MQTT or existing MQTT brokers.  |
+
+# To do
+- Add [Context storage](https://nodered.org/docs/user-guide/context#context-storage)
+- Add logging to InfluxDB
+- Use node-red-contrib-watchdog  to monitor whether repeated events (sensor, logic, device acknowledgement) are received on schedule.
+- For relays, pumps, etc, use power current sensors, to confirm the “on” command is effective. If the relay is “on” too long or does not switch off, activate a failsafe 
      
 # Discarded ideas
 - [Yocto](https://youtu.be/kxCBwUviO-Q?si=RPGIBIPhucpSWwRQ&t=400) or
