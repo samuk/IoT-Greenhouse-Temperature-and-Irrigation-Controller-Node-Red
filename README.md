@@ -4,11 +4,11 @@
 See details of the original project below. This project adapts that work to integrate with
 
 # Hardware
-    [Olimex iMX8 open hardware SBC](https://www.olimex.com/Products/SOM/NXP-iMX8/iMX8MP-SOM-EVB-IND/open-source-hardware) produced until [2036](https://www.nxp.com/products/nxp-product-information/nxp-product-programs/product-longevity:PRDCT_LONGEVITY_HM) board  with a removable eMMC chip for the operating system (read-only root).
-    M.2 NVMe SSD  for the persistent /data partition (labelled data through its filesystem label).
-    Optional SD card slot  used exclusively for on-demand or scheduled backup of /data.
-    Required fieldbus/protocol support (e.g., Zigbee USB dongle, Modbus/RS485, CANbus, optional LoRa/Meshtastic).
-    Relevant environmental, soil, and actuator hardware (relays, pumps, sensors).
+   - [Olimex iMX8 open hardware SBC](https://www.olimex.com/Products/SOM/NXP-iMX8/iMX8MP-SOM-EVB-IND/open-source-hardware) produced until [2036](https://www.nxp.com/products/nxp-product-information/nxp-product-programs/product-longevity:PRDCT_LONGEVITY_HM) board  with a removable eMMC chip for the operating system (read-only root).
+- M.2 NVMe SSD  for the persistent /data partition (labelled data through its filesystem label).
+- SD card slot  used exclusively for scheduled backup of /data
+- Required fieldbus/protocol support (e.g., Zigbee USB dongle, Modbus/RS485, optional CANbus, LoRa/Meshtastic).
+- Relevant environmental, soil, and actuator hardware (relays, pumps, sensors).
 
 - [B-parasite sensor](https://github.com/rbaron/b-parasite?tab=readme-ov-file)
 - [OLIMEXINO-STM32F3](https://www.olimex.com/Products/Duino/STM32/OLIMEXINO-STM32F3/open-source-hardware) & [MOD-RS485](https://www.olimex.com/Products/Modules/Interface/MOD-RS485-ISO/open-source-hardware) or [SPE](https://store.arduino.cc/products/uno-spe-shield) running [FreeRTOS](https://github.com/alejoseb/Modbus-STM32-HAL-FreeRTOS)
@@ -17,13 +17,12 @@ See details of the original project below. This project adapts that work to inte
 - [Sequent](https://sequentmicrosystems.com/) Closed, but interesting to support
 
 # Software
-  Buildroot](https://github.com/OLIMEX/buildroot-imx) & [RT patch]( https://gitlab.com/buildroot.org/buildroot/-/tree/master/package?ref_type=heads) with  Buildroot-based Linux  for a reliable appliance-  style OS.
-    Read-only root filesystem  on the eMMC for resilience and simple field upgrades (chip swap).
-    [Docker](https://www.reddit.com/r/embedded/comments/120r5za/comment/jdy1hg0/) and Docker Compose  included in the OS image.
+- [Buildroot](https://github.com/OLIMEX/buildroot-imx) & [RT patch]( https://gitlab.com/buildroot.org/buildroot/-/tree/master/package?ref_type=heads) with  Buildroot-based Linux  for a reliable appliance-  style OS.
+- Read-only root filesystem  on the eMMC for resilience and simple field upgrades (chip swap).
+- [Docker](https://www.reddit.com/r/embedded/comments/120r5za/comment/jdy1hg0/) and Docker Compose  included in the OS image.
     All persistent application and container data stored on the M.2 NVMe as /data (auto-mounted by LABEL).
 
-
-  Core Docker stack contains:
+  Core Docker stack :
 
 -  Node-RED  (automation logic),
 -  [Zigbee2MQTT](https://sensorsiot.github.io/IOTstack/Containers/Zigbee2MQTT/) Container for Zigbee devices, eg 
@@ -37,16 +36,14 @@ See details of the original project below. This project adapts that work to inte
 
            
 # Integration:  
-
-    Node-RED flows unify input/output from all protocols (Zigbee, Modbus, CANbus, etc.), automate greenhouse/hydroponics logic, and log to InfluxDB.
-    All critical site and sensor data is written to /data on the NVMe.
+- Node-RED flows unify input/output from all protocols (Zigbee, Modbus, CANbus, etc.), automate greenhouse/hydroponics logic, and log to InfluxDB.
+- All critical site and sensor data is written to /data on the NVMe.
      
 
 # Backup & Updates:  
-
-    Backup scripts to regularly save /data (from NVMe) to the SD card  for disaster recovery or maintenance.
-    Operators update the OS by swapping the eMMC chip in the field (no remote flashing).
-    Clear operator documentation for backup/restore, field upgrades, and troubleshooting.
+- Backup scripts to regularly save /data (from NVMe) to the SD card  for disaster recovery or maintenance.
+- Operators update the OS by swapping the eMMC chip in the field (no remote flashing).
+- Clear operator documentation for backup/restore, field upgrades, and troubleshooting.
      
 # Discarded ideas
 - [Yocto](https://youtu.be/kxCBwUviO-Q?si=RPGIBIPhucpSWwRQ&t=400) or
