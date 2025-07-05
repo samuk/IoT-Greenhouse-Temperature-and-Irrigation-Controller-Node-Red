@@ -39,7 +39,7 @@ See details of the original project below. This project adapts that work to inte
 
 Additional Services
   
-- [Can2MQTT](https://github.com/c3re/can2mqtt) for Canbus devices, eg [Rootsense](https://docs.openhydroponics.com/hardware/rootsense.html)
+- [Can2MQTT](https://github.com/c3re/can2mqtt) or [dockerised](https://hub.docker.com/r/gbeine/can2mqtt) for Canbus devices, eg [Rootsense](https://docs.openhydroponics.com/hardware/rootsense.html)
 
 # Tools
 - [Buildah](https://github.com/containers/buildah?tab=readme-ov-file) for building NodeRed to include greenhouse automation flow, node-red-contrib-influxdb, node-red-contrib-watchdog
