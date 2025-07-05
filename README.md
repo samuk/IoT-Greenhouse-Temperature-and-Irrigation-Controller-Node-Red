@@ -19,6 +19,7 @@ See details of the original project below. This project adapts that work to inte
 - [MOD IO](https://www.olimex.com/Products/Modules/IO/MOD-IO/open-source-hardware) 4x Relay, IO
 - [Custom DIN rail/ hat rack PCB](https://easyeda.com/editor#project_id=ed4b7d9f3bd04f4f8904607c2b001507) to mount Olimex carrier
 - [Hat rack](https://plasmadan.com/product/hat-rack-mini-raspberry-pi-hat-mount/) to support hats
+- [SPE hat](https://www.sg-electronic-systems.com/ecommerce/ethernet-shield/33-single-pair-ethernet-v100-single-pair-ethernet-v100-shield-for-raspberry-pi-is-an-open-hardware-design-it-has-two-functionalitie.html)
 - [Sequent](https://sequentmicrosystems.com/) Closed, but interesting to support
 
 # Software
