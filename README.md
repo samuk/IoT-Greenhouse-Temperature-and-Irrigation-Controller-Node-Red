@@ -1,27 +1,28 @@
 
 # Fork of IoT-Greenhouse-Temperature-&-Irrigation-Controller
 
-See details of the original project below. This project adapts that work to integrate with
+See details of the original project below. This project adapts that work to integrate with - Fieldbus/protocol support (e.g., Zigbee USB dongle, Modbus/RS485, optional CANbus, Single Pair Ethernet, LoRa/Meshtastic).
+
 
 ![sensor system](https://raw.githubusercontent.com/samuk/IoT-Greenhouse-Temperature-and-Irrigation-Controller-Node-Red/refs/heads/main/Sensor%20system.jpg
  "Logo Title Text 1")
 
 # Hardware
-   - [Olimex iMX8 open hardware SBC](https://www.olimex.com/Products/SOM/NXP-iMX8/iMX8MP-SOM-EVB-IND/open-source-hardware) produced until [2036](https://www.nxp.com/products/nxp-product-information/nxp-product-programs/product-longevity:PRDCT_LONGEVITY_HM) board  with a removable eMMC chip for the operating system (read-only root).
+   - [Olimex iMX8 open hardware SBC](https://www.olimex.com/Products/SOM/NXP-iMX8/iMX8MP-SOM-EVB-IND/open-source-hardware) produced until [2036](https://www.nxp.com/products/nxp-product-information/nxp-product-programs/product-longevity:PRDCT_LONGEVITY_HM) board  with a [removable eMMC chip](https://www.olimex.com/Products/OLinuXino/Accessories/Flash-e32Gs16M/) for the operating system (read-only root).
 
+- [Custom DIN rail/ hat rack PCB](https://easyeda.com/editor#project_id=ed4b7d9f3bd04f4f8904607c2b001507) to mount Olimex carrier
 - M.2 NVMe SSD  for the persistent /data partition (labelled data through its filesystem label).
 - SD card slot  used exclusively for scheduled backup of /data
-- Required fieldbus/protocol support (e.g., Zigbee USB dongle, Modbus/RS485, optional CANbus, Single Pair Ethernet, LoRa/Meshtastic).
 - Relevant environmental, soil, and actuator hardware (relays, pumps, sensors).
 
 - [B-parasite sensor](https://github.com/rbaron/b-parasite?tab=readme-ov-file)
 - [OLIMEXINO-STM32F3](https://www.olimex.com/Products/Duino/STM32/OLIMEXINO-STM32F3/open-source-hardware) & [MOD-RS485](https://www.olimex.com/Products/Modules/Interface/MOD-RS485-ISO/open-source-hardware) with [custom shield](https://easyeda.com/editor#id=a863dc0108f74cb184ebf043b9bd98b7|0fb0bc8a8a284d4f8c591254ed1418f7) or [SPE](https://store.arduino.cc/products/uno-spe-shield) running Arduino or [FreeRTOS](https://github.com/alejoseb/Modbus-STM32-HAL-FreeRTOS)
 - [AC relay](https://k2audio.co.uk/collections/ac-power-control-iot/products/keene-kps1-ac-powerswitch-relay-or-trigger-control-for-iot-arduino-rasberry-pi-1) 
 - [MOD IO](https://www.olimex.com/Products/Modules/IO/MOD-IO/open-source-hardware) 4x Relay, IO
-- [Custom DIN rail/ hat rack PCB](https://easyeda.com/editor#project_id=ed4b7d9f3bd04f4f8904607c2b001507) to mount Olimex carrier
 - [Hat rack](https://plasmadan.com/product/hat-rack-mini-raspberry-pi-hat-mount/) to support hats
 - [SPE hat](https://www.sg-electronic-systems.com/ecommerce/ethernet-shield/33-single-pair-ethernet-v100-single-pair-ethernet-v100-shield-for-raspberry-pi-is-an-open-hardware-design-it-has-two-functionalitie.html)
 - [Sequent](https://sequentmicrosystems.com/) Closed, but interesting to support
+- [Zigbee Sonoff universal](https://www.amazon.co.uk/dp/B09KXTCMSC?tag=ceukreviews400881-21&linkCode=osi&th=1&psc=1)
 
 # Software
 - [Buildroot](https://github.com/OLIMEX/buildroot-imx) & [RT patch]( https://gitlab.com/buildroot.org/buildroot/-/tree/master/package?ref_type=heads) with  Buildroot-based Linux  for a reliable appliance-  style OS.
@@ -32,7 +33,7 @@ See details of the original project below. This project adapts that work to inte
   Core Docker stack :
 
 -  [Node-RED](https://nodered.org/)  (automation logic),
--  [Zigbee2MQTT](https://sensorsiot.github.io/IOTstack/Containers/Zigbee2MQTT/) Container for Zigbee devices, eg 
+-  [Zigbee2MQTT](https://sensorsiot.github.io/IOTstack/Containers/Zigbee2MQTT/) Container for 4400 supported Zigbee devices, 
 - [Modbus2MQTT](https://github.com/modbus2mqtt/server/blob/main/introduction.md) for Modbus devices
  - [Portainer](https://www.portainer.io/) container management
 - [InfluxDB](https://sensorsiot.github.io/IOTstack/Containers/InfluxDB/) time-series logging
