@@ -16,7 +16,7 @@ See details of the original project below. This project adapts that work to inte
 - Relevant environmental, soil, and actuator hardware (relays, pumps, sensors).
 
 - [B-parasite sensor](https://github.com/rbaron/b-parasite?tab=readme-ov-file)
-- [OLIMEXINO-STM32F3](https://www.olimex.com/Products/Duino/STM32/OLIMEXINO-STM32F3/open-source-hardware) & [MOD-RS485](https://www.olimex.com/Products/Modules/Interface/MOD-RS485-ISO/open-source-hardware) with [custom shield](https://easyeda.com/editor#id=|0fb0bc8a8a284d4f8c591254ed1418f7|7221dde35d414902bdfeba2d03370245|b370bd9c568b42909310514aeeca46e3|a863dc0108f74cb184ebf043b9bd98b7) or [SPE](https://store.arduino.cc/products/uno-spe-shield) running Arduino or [FreeRTOS](https://github.com/alejoseb/Modbus-STM32-HAL-FreeRTOS)
+- [OLIMEXINO-STM32F3](https://www.olimex.com/Products/Duino/STM32/OLIMEXINO-STM32F3/open-source-hardware) & [MOD-RS485](https://www.olimex.com/Products/Modules/Interface/MOD-RS485-ISO/open-source-hardware) with [custom shield](https://easyeda.com/editor#id=|0fb0bc8a8a284d4f8c591254ed1418f7|7221dde35d414902bdfeba2d03370245|b370bd9c568b42909310514aeeca46e3|a863dc0108f74cb184ebf043b9bd98b7) to enable [CO2 sensors](https://www.mikroe.com/hvac-click) or [SPE](https://store.arduino.cc/products/uno-spe-shield) running Arduino or [FreeRTOS](https://github.com/alejoseb/Modbus-STM32-HAL-FreeRTOS)
 - [AC relay](https://k2audio.co.uk/collections/ac-power-control-iot/products/keene-kps1-ac-powerswitch-relay-or-trigger-control-for-iot-arduino-rasberry-pi-1) 
 - [MOD IO](https://www.olimex.com/Products/Modules/IO/MOD-IO/open-source-hardware) 4x Relay, IO
 - [Hat rack](https://plasmadan.com/product/hat-rack-mini-raspberry-pi-hat-mount/) to support hats
