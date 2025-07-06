@@ -16,6 +16,7 @@ See details of the original project below. This project adapts that work to inte
 
 - [B-parasite sensor](https://github.com/rbaron/b-parasite?tab=readme-ov-file)
 - [OLIMEXINO-STM32F3](https://www.olimex.com/Products/Duino/STM32/OLIMEXINO-STM32F3/open-source-hardware) & [MOD-RS485](https://www.olimex.com/Products/Modules/Interface/MOD-RS485-ISO/open-source-hardware) with [custom shield](https://easyeda.com/editor#id=a863dc0108f74cb184ebf043b9bd98b7|0fb0bc8a8a284d4f8c591254ed1418f7) or [SPE](https://store.arduino.cc/products/uno-spe-shield) running Arduino or [FreeRTOS](https://github.com/alejoseb/Modbus-STM32-HAL-FreeRTOS)
+- [AC relay](https://k2audio.co.uk/collections/ac-power-control-iot/products/keene-kps1-ac-powerswitch-relay-or-trigger-control-for-iot-arduino-rasberry-pi-1) 
 - [MOD IO](https://www.olimex.com/Products/Modules/IO/MOD-IO/open-source-hardware) 4x Relay, IO
 - [Custom DIN rail/ hat rack PCB](https://easyeda.com/editor#project_id=ed4b7d9f3bd04f4f8904607c2b001507) to mount Olimex carrier
 - [Hat rack](https://plasmadan.com/product/hat-rack-mini-raspberry-pi-hat-mount/) to support hats
@@ -32,7 +33,7 @@ See details of the original project below. This project adapts that work to inte
 
 -  [Node-RED](https://nodered.org/)  (automation logic),
 -  [Zigbee2MQTT](https://sensorsiot.github.io/IOTstack/Containers/Zigbee2MQTT/) Container for Zigbee devices, eg 
-- [Modbus2MQTT](https://github.com/Instathings/modbus2mqtt) for Modbus devices
+- [Modbus2MQTT](https://github.com/modbus2mqtt/server/blob/main/introduction.md) for Modbus devices
  - [Portainer](https://www.portainer.io/) container management
 - [InfluxDB](https://sensorsiot.github.io/IOTstack/Containers/InfluxDB/) time-series logging
 - [Mosquitto](https://sensorsiot.github.io/IOTstack/Containers/Mosquitto/) MQTT broker
