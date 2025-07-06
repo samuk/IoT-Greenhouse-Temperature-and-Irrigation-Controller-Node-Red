@@ -11,7 +11,7 @@ See details of the original project below. This project adapts that work to inte
 
 - M.2 NVMe SSD  for the persistent /data partition (labelled data through its filesystem label).
 - SD card slot  used exclusively for scheduled backup of /data
-- Required fieldbus/protocol support (e.g., Zigbee USB dongle, Modbus/RS485, optional CANbus, LoRa/Meshtastic).
+- Required fieldbus/protocol support (e.g., Zigbee USB dongle, Modbus/RS485, optional CANbus, Single Pair Ethernet, LoRa/Meshtastic).
 - Relevant environmental, soil, and actuator hardware (relays, pumps, sensors).
 
 - [B-parasite sensor](https://github.com/rbaron/b-parasite?tab=readme-ov-file)
