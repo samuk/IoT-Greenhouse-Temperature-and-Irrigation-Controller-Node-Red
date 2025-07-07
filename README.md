@@ -22,8 +22,8 @@ See details of the original project below. This project adapts that work to inte
 - [Hat rack](https://plasmadan.com/product/hat-rack-mini-raspberry-pi-hat-mount/) to support hats
 - [SPE hat](https://www.sg-electronic-systems.com/ecommerce/ethernet-shield/33-single-pair-ethernet-v100-single-pair-ethernet-v100-shield-for-raspberry-pi-is-an-open-hardware-design-it-has-two-functionalitie.html)
 - [Sequent](https://sequentmicrosystems.com/) Closed, but interesting to support
-- [SNZB-02LD- Zigbee remote temp](https://www.domadoo.fr/en/devices/5998-owon-zigbee-remote-temperature-probe-on-cable.html)
-- [Zigbee Sonoff universal](https://www.aliexpress.com/item/1005008952873101.html?spm=a2g0o.productlist.main.3.428157e8HN3fbW&algo_pvid=d96616ad-0961-4abb-a226-78164b9d77f6&algo_exp_id=d96616ad-0961-4abb-a226-78164b9d77f6-2&pdp_ext_f=%7B%22order%22%3A%2259%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21GBP%2113.41%219.39%21%21%21127.23%2189.09%21%40210384b917518979138417283eb9ad%2112000047343998059%21sea%21UK%211700196940%21X&curPageLogUid=w6h0O8OXx8Bw&utparam-url=scene%3Asearch%7Cquery_from%3A) [MQTT](https://www.zigbee2mqtt.io/devices/SNZB-02LD.html)
+- [SNZB-02LD- Zigbee remote temp](https://www.aliexpress.com/item/1005008952873101.html?spm=a2g0o.productlist.main.3.428157e8HN3fbW&algo_pvid=d96616ad-0961-4abb-a226-78164b9d77f6&algo_exp_id=d96616ad-0961-4abb-a226-78164b9d77f6-2&pdp_ext_f=%7B%22order%22%3A%2259%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21GBP%2113.41%219.39%21%21%21127.23%2189.09%21%40210384b917518979138417283eb9ad%2112000047343998059%21sea%21UK%211700196940%21X&curPageLogUid=w6h0O8OXx8Bw&utparam-url=scene%3Asearch%7Cquery_from%3A) [MQTT](https://www.zigbee2mqtt.io/devices/SNZB-02LD.html)
+- [Zigbee Sonoff universal]() 
 
 # Software
 - [Buildroot](https://github.com/OLIMEX/buildroot-imx) & [RT patch]( https://gitlab.com/buildroot.org/buildroot/-/tree/master/package?ref_type=heads) with  Buildroot-based Linux  for a reliable appliance-  style OS.
