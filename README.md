@@ -10,7 +10,7 @@ See details of the original project below. This project adapts that work to inte
 # Hardware
    - [Olimex iMX8 open hardware SBC](https://www.olimex.com/Products/SOM/NXP-iMX8/iMX8MP-SOM-EVB-IND/open-source-hardware) produced until [2036](https://www.nxp.com/products/nxp-product-information/nxp-product-programs/product-longevity:PRDCT_LONGEVITY_HM) board  with a [removable eMMC chip](https://www.olimex.com/Products/OLinuXino/Accessories/Flash-e32Gs16M/) for the operating system (read-only root).
 
-- [Custom DIN rail/ hat rack PCB](http://bit.ly/3IuuCZi) to mount Olimex carrier
+- [Custom DIN rail/ hat rack PCB](https://bit.ly/4lKvFTv) to mount Olimex carrier
 - M.2 NVMe SSD  for the persistent /data partition (labelled data through its filesystem label).
 - SD card slot  used exclusively for scheduled backup of /data
 - Relevant environmental, soil, and actuator hardware (relays, pumps, sensors).
