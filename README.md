@@ -22,6 +22,7 @@ See details of the original project below. This project adapts that work to inte
 - [Hat rack](https://plasmadan.com/product/hat-rack-mini-raspberry-pi-hat-mount/) to support hats
 - [SPE hat](https://www.sg-electronic-systems.com/ecommerce/ethernet-shield/33-single-pair-ethernet-v100-single-pair-ethernet-v100-shield-for-raspberry-pi-is-an-open-hardware-design-it-has-two-functionalitie.html)
 - [Sequent](https://sequentmicrosystems.com/) Closed, but interesting to support
+- [OWON - Zigbee remote temp](https://www.domadoo.fr/en/devices/5998-owon-zigbee-remote-temperature-probe-on-cable.html)
 - [Zigbee Sonoff universal](https://www.amazon.co.uk/dp/B09KXTCMSC?tag=ceukreviews400881-21&linkCode=osi&th=1&psc=1)
 
 # Software
