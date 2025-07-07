@@ -1,19 +1,23 @@
 
 # Fork of IoT-Greenhouse-Temperature-&-Irrigation-Controller
 
-See details of the original project below. This project adapts that work to integrate with - Fieldbus/protocol support (e.g., Zigbee USB dongle, Modbus/RS485, optional CANbus, Single Pair Ethernet, LoRa/Meshtastic).
+See details of the original project below. This project adapts that work to integrate with - Fieldbus/protocol support (e.g., Modbus/RS485, Zigbee USB dongle, optional CANbus, Single Pair Ethernet, LoRa/Meshtastic).
 
 
 ![sensor system](https://raw.githubusercontent.com/samuk/IoT-Greenhouse-Temperature-and-Irrigation-Controller-Node-Red/refs/heads/main/Sensor%20system.jpg
  "Logo Title Text 1")
 
-# Hardware
+# Compute Hardware
    - [Olimex iMX8 open hardware SBC](https://www.olimex.com/Products/SOM/NXP-iMX8/iMX8MP-SOM-EVB-IND/open-source-hardware) produced until [2036](https://www.nxp.com/products/nxp-product-information/nxp-product-programs/product-longevity:PRDCT_LONGEVITY_HM) board  with a [removable eMMC chip](https://www.olimex.com/Products/OLinuXino/Accessories/Flash-e32Gs16M/) for the operating system (read-only root).
 
 - [Custom DIN rail/ hat rack PCB](https://bit.ly/4lKvFTv) to mount Olimex carrier
 - M.2 NVMe SSD  for the persistent /data partition (labelled data through its filesystem label).
 - SD card slot  used exclusively for scheduled backup of /data
 - Relevant environmental, soil, and actuator hardware (relays, pumps, sensors).
+- - [Zigbee Sonoff universal dongle](https://www.amazon.co.uk/dp/B09KXTCMSC?tag=ceukreviews400881-21&linkCode=osi&th=1&psc=1)
+
+
+# Commercial devices
 
 - [B-parasite sensor](https://github.com/rbaron/b-parasite?tab=readme-ov-file)
 - [OLIMEXINO-STM32F3](https://www.olimex.com/Products/Duino/STM32/OLIMEXINO-STM32F3/open-source-hardware) & [MOD-RS485](https://www.olimex.com/Products/Modules/Interface/MOD-RS485-ISO/open-source-hardware) with [custom shield](http://bit.ly/45WCPPN) to enable [CO2 sensors](https://www.mikroe.com/hvac-click) or [SPE](https://store.arduino.cc/products/uno-spe-shield) running Arduino or [FreeRTOS](https://github.com/alejoseb/Modbus-STM32-HAL-FreeRTOS)
@@ -22,9 +26,10 @@ See details of the original project below. This project adapts that work to inte
 - [Hat rack](https://plasmadan.com/product/hat-rack-mini-raspberry-pi-hat-mount/) to support hats
 - [SPE hat](https://www.sg-electronic-systems.com/ecommerce/ethernet-shield/33-single-pair-ethernet-v100-single-pair-ethernet-v100-shield-for-raspberry-pi-is-an-open-hardware-design-it-has-two-functionalitie.html)
 - [Sequent](https://sequentmicrosystems.com/) Closed, but interesting to support
-- [SNZB-02LD- Zigbee remote temp](https://www.aliexpress.com/item/1005008952873101.html?spm=a2g0o.productlist.main.3.428157e8HN3fbW&algo_pvid=d96616ad-0961-4abb-a226-78164b9d77f6&algo_exp_id=d96616ad-0961-4abb-a226-78164b9d77f6-2&pdp_ext_f=%7B%22order%22%3A%2259%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21GBP%2113.41%219.39%21%21%21127.23%2189.09%21%40210384b917518979138417283eb9ad%2112000047343998059%21sea%21UK%211700196940%21X&curPageLogUid=w6h0O8OXx8Bw&utparam-url=scene%3Asearch%7Cquery_from%3A) [MQTT](https://www.zigbee2mqtt.io/devices/SNZB-02LD.html)
-- [Zigbee Sonoff universal dongle](https://www.amazon.co.uk/dp/B09KXTCMSC?tag=ceukreviews400881-21&linkCode=osi&th=1&psc=1)
 
+  # Consumer devices
+- [SNZB-02LD- Zigbee remote temp](https://www.aliexpress.com/item/1005008952873101.html?spm=a2g0o.productlist.main.3.428157e8HN3fbW&algo_pvid=d96616ad-0961-4abb-a226-78164b9d77f6&algo_exp_id=d96616ad-0961-4abb-a226-78164b9d77f6-2&pdp_ext_f=%7B%22order%22%3A%2259%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21GBP%2113.41%219.39%21%21%21127.23%2189.09%21%40210384b917518979138417283eb9ad%2112000047343998059%21sea%21UK%211700196940%21X&curPageLogUid=w6h0O8OXx8Bw&utparam-url=scene%3Asearch%7Cquery_from%3A) [MQTT](https://www.zigbee2mqtt.io/devices/SNZB-02LD.html)
+- [Innr smartplug with power monitoring](https://www.amazon.co.uk/ZigBee-Socket-Automation-Philips-SmartThings/dp/B0CFVLK4FL?th=1)
 
 
 # Software
