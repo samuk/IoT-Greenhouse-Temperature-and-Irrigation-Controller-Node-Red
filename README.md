@@ -29,6 +29,7 @@ Relevant environmental, soil, and actuator hardware (relays, pumps, sensors).
 - [AC relay](https://k2audio.co.uk/collections/ac-power-control-iot/products/keene-kps1-ac-powerswitch-relay-or-trigger-control-for-iot-arduino-rasberry-pi-1) 
 - [B-parasite Zigbee temp/humidity sensor](https://github.com/rbaron/b-parasite?tab=readme-ov-file)
 - [Atlas Ph, EC sensors](https://www.mikroe.com/partners/atlas-scientific)
+- [Eu controls](https://us.rs-online.com/product/eucontrols-corp/lcm-1c09-zb/70959301/)LED contol
 
   # Consumer devices
 
