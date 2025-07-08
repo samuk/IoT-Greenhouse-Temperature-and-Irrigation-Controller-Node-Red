@@ -30,6 +30,7 @@ Relevant environmental, soil, and actuator hardware (relays, pumps, sensors).
 - [B-parasite Zigbee temp/humidity sensor](https://github.com/rbaron/b-parasite?tab=readme-ov-file)
 - [Atlas Ph, EC sensors](https://www.mikroe.com/partners/atlas-scientific)
 - [Eu controls](https://us.rs-online.com/product/eucontrols-corp/lcm-1c09-zb/70959301/)LED contol
+- [LoRa](https://meshtastic.org/docs/software/integrations/mqtt/nodered/)
 
   # Consumer devices
 
