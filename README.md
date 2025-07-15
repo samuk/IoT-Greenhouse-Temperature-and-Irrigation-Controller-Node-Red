@@ -38,6 +38,7 @@ Relevant environmental, soil, and actuator hardware (relays, pumps, sensors).
   
 - [SNZB-02LD- Zigbee remote temp](https://www.aliexpress.com/item/1005008952873101.html?spm=a2g0o.productlist.main.3.428157e8HN3fbW&algo_pvid=d96616ad-0961-4abb-a226-78164b9d77f6&algo_exp_id=d96616ad-0961-4abb-a226-78164b9d77f6-2&pdp_ext_f=%7B%22order%22%3A%2259%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21GBP%2113.41%219.39%21%21%21127.23%2189.09%21%40210384b917518979138417283eb9ad%2112000047343998059%21sea%21UK%211700196940%21X&curPageLogUid=w6h0O8OXx8Bw&utparam-url=scene%3Asearch%7Cquery_from%3A) [MQTT](https://www.zigbee2mqtt.io/devices/SNZB-02LD.html)
 - [Innr smartplug with power monitoring](https://www.amazon.co.uk/ZigBee-Socket-Automation-Philips-SmartThings/dp/B0CFVLK4FL?th=1)
+- [Metro ESP32](https://www.adafruit.com/product/5500)
 
 
 # Software
